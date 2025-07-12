@@ -1,1 +1,9 @@
-rootProject.name = 'aoo'
+rootProject.name = 'hoo-universe'
+
+include(
+//        "adapter",
+//        "api-in",
+//        "api-out",
+//        "application",
+        "domain"
+)

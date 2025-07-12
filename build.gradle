@@ -148,3 +148,5 @@ asciidoctor {
 bootJar {
     dependsOn asciidoctor
 }
+
+bootJar.enabled = false

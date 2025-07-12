@@ -1,0 +1,30 @@
+plugins {
+    id 'java'
+}
+
+group = 'com.hoo'
+version = '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+
+    compileOnly "org.projectlombok:lombok:1.18.38"
+    annotationProcessor "org.projectlombok:lombok:1.18.38"
+
+    testCompileOnly "org.projectlombok:lombok:1.18.38"
+    testAnnotationProcessor "org.projectlombok:lombok:1.18.38"
+
+    testRuntimeOnly "org.junit.platform:junit-platform-launcher"
+    testRuntimeOnly "org.junit.jupiter:junit-jupiter-engine:5.13.3"
+    testImplementation "org.junit.jupiter:junit-jupiter-api:5.13.3"
+    testImplementation "org.assertj:assertj-core:3.27.3"
+    testImplementation "com.github.f4b6a3:uuid-creator:6.1.1"
+}
+
+
+test {
+    useJUnitPlatform()
+}

@@ -50,7 +50,7 @@ spring:
     database: mysql
     hibernate:
       naming:
-        physical-strategy: com.aoo.common.adapter.out.persistence.config.HibernateCustomNamingStrategy
+        physical-strategy: com.hoo.common.adapter.out.persistence.config.HibernateCustomNamingStrategy
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
     username: ${database.mysql.username}
